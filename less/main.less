@@ -1,10 +1,16 @@
+body {
+  width: 98%;
+}
 .title-container {
     .stdmargin;
 
     img {
+        height: 70vh;
         width: 100%;
-        // .stdmargin;
         margin: 2%;
+        @media @mobile {
+          height: 50vh;
+        }
     }
     .centertitle {
         font-size: 3rem;
@@ -37,3 +43,36 @@
     
 }
 
+.artists-container {
+  .stdmargin;
+  width: auto;
+  .flex(row, center, flex-start);
+  padding: 2%;
+  @media @mobile {
+    .flex(column, center, center);
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+  }
+
+  img {
+    height: 200px;
+    padding: 2%;
+  }
+
+  .bio {
+    .stdmargin;
+    width: 85%;
+    @media @mobile {
+      width: 180%;
+    }
+  }
+ 
+  .artist {
+    .flex(column, center, center);
+    width: 40%;
+  }
+}

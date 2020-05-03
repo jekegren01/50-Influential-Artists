@@ -143,13 +143,22 @@ nav a {
 nav a:hover {
   color: #cccccc;
 }
+body {
+  width: 98%;
+}
 .title-container {
   margin: 0.5%;
   padding: 1%;
 }
 .title-container img {
+  height: 70vh;
   width: 100%;
   margin: 2%;
+}
+@media (max-width: 500px) {
+  .title-container img {
+    height: 50vh;
+  }
 }
 .title-container .centertitle {
   font-size: 3rem;
@@ -182,4 +191,48 @@ nav a:hover {
 }
 .title-container .centerbutton:hover {
   opacity: 80%;
+}
+.artists-container {
+  margin: 0.5%;
+  padding: 1%;
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2%;
+}
+@media (max-width: 500px) {
+  .artists-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.artists-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.3rem;
+}
+.artists-container img {
+  height: 200px;
+  padding: 2%;
+}
+.artists-container .bio {
+  margin: 0.5%;
+  padding: 1%;
+  width: 85%;
+}
+@media (max-width: 500px) {
+  .artists-container .bio {
+    width: 180%;
+  }
+}
+.artists-container .artist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
 }
