@@ -96,3 +96,53 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5%;
+  padding: 1%;
+}
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 50%;
+  margin: 0.5%;
+  padding: 1%;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+    text-align: center;
+  }
+  nav .centeranchor {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+}
+nav a {
+  text-decoration: none;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 1.6rem;
+  width: 80px;
+  height: 30px;
+  color: black;
+}
+@media (max-width: 500px) {
+  nav a {
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+nav a:hover {
+  color: #cccccc;
+}
