@@ -224,14 +224,14 @@ body {
   height: 200px;
   padding: 2%;
 }
-@media (max-width: 500px) {
-  .artists-container img {
-    height: 150px;
-  }
-}
 @media (max-width: 800px) {
   .artists-container img {
-    height: 170px;
+    height: 140px;
+  }
+}
+@media (max-width: 500px) {
+  .artists-container img {
+    height: 180px;
   }
 }
 .artists-container .bio {
