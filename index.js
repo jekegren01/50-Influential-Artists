@@ -289,15 +289,18 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(arr) {
-  const arr = [id: id, name: name, years: years, genre: genre, nationality: nationality: bio: bio];
-
-  artists.shift(arr);
-};
-
-addArtist(38, Jake, 1982 - present, Web Design, American, lorem ipsum);
-// to verify
-console.log(artists(0));
+function addArtist(array){
+  artists.push(array)
+  return artists;
+    }
+    
+addArtist([{id: 20,
+  name: "Jake Ekegen", 
+  years: "1982",
+  genre: "What Ever I Say", 
+  nationality: "Irish American",
+  bio: "I do what I want...so says Cartman"}]);
+  // it worked, i need to knwo why
 
 
 
