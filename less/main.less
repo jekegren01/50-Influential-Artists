@@ -56,11 +56,17 @@ body {
     text-decoration: none;
     color: black;
     font-size: 1.3rem;
+    @media @mobile {
+      font-size: 1.2rem;
+    }
   }
 
   img {
     height: 200px;
     padding: 2%;
+    @media @mobile {
+      height: 150px;
+    }
   }
 
   .bio {

@@ -215,9 +215,19 @@ body {
   color: black;
   font-size: 1.3rem;
 }
+@media (max-width: 500px) {
+  .artists-container a {
+    font-size: 1.2rem;
+  }
+}
 .artists-container img {
   height: 200px;
   padding: 2%;
+}
+@media (max-width: 500px) {
+  .artists-container img {
+    height: 150px;
+  }
 }
 .artists-container .bio {
   margin: 0.5%;
