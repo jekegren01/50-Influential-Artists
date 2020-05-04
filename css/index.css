@@ -229,6 +229,11 @@ body {
     height: 150px;
   }
 }
+@media (max-width: 800px) {
+  .artists-container img {
+    height: 170px;
+  }
+}
 .artists-container .bio {
   margin: 0.5%;
   padding: 1%;
