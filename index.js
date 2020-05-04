@@ -263,6 +263,14 @@ console.log(getArtistByIndex(artists, 1));
 //    console.log(removeArtist(2, 2))
 //    console.log(removeArtist(artists, 5));
 
+function removeArtist(array, index) {
+  x = index;
+   artists.splice(x, 1);
+  }
+removeArtist(artists, 0)
+
+console.log (artists);
+
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
@@ -300,6 +308,7 @@ addArtist([{id: 20,
   genre: "What Ever I Say", 
   nationality: "Irish American",
   bio: "I do what I want...so says Cartman"}]);
+
   // it worked, i need to knwo why
 
 
