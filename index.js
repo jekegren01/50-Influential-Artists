@@ -244,20 +244,40 @@ console.log(getArtistByIndex(artists, 1));
  * For example, if removeArtist is invoked with the data and the number 0,
  * it will remove Amedeo Modigliani from our dataset.
 */
-function removeArtist(/*code here*/) {
-    /* code here */
-  }
-  
-  /**
+// function removeArtist(array, index)  {
+//   let NewArtist = array[index];
+//   NewArtist.slice(index, 1);
+//   return array[index];
+// }
+
+// console.log(removeArtist(artists, 0));
+
+// function removeArtist(array, number) {
+//      if(number===array[number])(
+//        removeArtist.splice(number)
+//      )
+//      return removeArtist;
+//    removeArtist = array.slice(number);
+//    return removeArtist
+//    }
+//    console.log(removeArtist(2, 2))
+//    console.log(removeArtist(artists, 5));
 
 
 /* Task 5: Create a function called lotsOfArt() that takes artists as an argument and returns an array with names of artists who painted more than 100 paintings */
 
-function lotsOfArt(/* Code here */){
-
-    /* Code here */
-
+function lotsOfArt(arr) {
+  const newArtist = [];
+  for (let i=0; i<arr.length; i++) {
+    if (arr[i].paintings >= 100) {
+      newArtist.push(arr[i].name);
+    } 
   }
+    return newArtist;
+  
+}
+
+console.log(lotsOfArt(artists));
 
 
 /* Task 6: Create a function called `addArtist` that can accept an array of information and add it to the artists array. Then, Add a 21st artist to the array (you) with custom information! 👩‍🎨👨‍🎨
@@ -269,11 +289,15 @@ genre: Web Design,
 nationality: Your Nationality Here
 bio: Add 1-2 sentences (or use lorem ipsum) "*/
 
-function addArtist(/* Code here */){
+function addArtist(arr) {
+  const arr = [id: id, name: name, years: years, genre: genre, nationality: nationality: bio: bio];
 
-    /* Code here */
+  artists.shift(arr);
+};
 
-  }
+addArtist(38, Jake, 1982 - present, Web Design, American, lorem ipsum);
+// to verify
+console.log(artists(0));
 
 
 
