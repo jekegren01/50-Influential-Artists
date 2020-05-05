@@ -284,12 +284,12 @@ function addArtist(array){
   return artists;
     }
     
-addArtist([{id: 20,
+console.log(addArtist([{id: 20,
   name: "Jake Ekegen", 
   years: "1982",
   genre: "What Ever I Say", 
   nationality: "Irish American",
-  bio: "I do what I want...so says Cartman"}]);
+  bio: "I do what I want...so says Cartman"}]));
 
   // it worked, i need to knwo why
 
